@@ -28,9 +28,10 @@
       <p>Wortavia speichert für die Spielfunktion lokal auf dem Gerät insbesondere Fortschritt, Coins, gelöste Level, Statistiken, Serien, Einstellungen und den Zustand eines begonnenen Rätsels. Diese Daten werden von Tavirio Games nicht auf eigenen Servern gespeichert und sind für Tavirio Games grundsätzlich nicht einsehbar.</p>
       <p>Soweit diese lokale Speicherung für den vom Nutzer gewünschten Dienst erforderlich ist, erfolgt sie zur Bereitstellung der App-Funktionen. Lokale Spieldaten können über die Android-Einstellungen durch Löschen der App-Daten oder durch Deinstallation der App entfernt werden.</p>
 
+      <p>Die freiwillige Export-/Importfunktion erstellt oder liest eine Datei am über Android gewählten Speicherort. Separat exportierte Dateien müssen dort gesondert gelöscht werden. Spielstand-Importe erzeugen oder verändern keine Google-Play-Kaufberechtigung.</p>
       <h3>3. Google Mobile Ads / AdMob</h3>
       <p>Wortavia enthält das Google Mobile Ads SDK (AdMob). Anbieter für Nutzer im Europäischen Wirtschaftsraum ist insbesondere Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.</p>
-      <p>Das Mobile-Ads-SDK kann automatisch insbesondere folgende Daten verarbeiten und an Google übermitteln: die IP-Adresse, aus der ein ungefährer Standort abgeleitet werden kann, App-Interaktionen, Diagnosedaten sowie Geräte- oder andere Kennungen (z. B. Werbe-ID oder App-Set-ID). Die Verarbeitung kann insbesondere der Bereitstellung und Messung von Werbung, Analyse sowie Betrugsprävention, Sicherheit und Compliance dienen.</p>
+      <p>Das Mobile-Ads-SDK kann automatisch insbesondere folgende Daten verarbeiten und an Google übermitteln: die IP-Adresse, aus der ein ungefährer Standort abgeleitet werden kann, App-Interaktionen, Diagnosedaten sowie Geräte- oder andere Kennungen (z. B. Werbe-ID oder App-Set-ID). Einige Belohnungsanzeigen sind freiwillig. Die Verarbeitung kann insbesondere der Bereitstellung und Messung von Werbung, Analyse sowie Betrugsprävention, Sicherheit und Compliance dienen.</p>
       <p>Soweit eine Einwilligung erforderlich ist, wird diese vor entsprechenden werberelevanten Verarbeitungen über die in der App eingebundene Einwilligungsverwaltung abgefragt. Einwilligungen können mit Wirkung für die Zukunft widerrufen oder geändert werden, sobald die entsprechende Datenschutzoption in der produktiven Werbekonfiguration verfügbar ist.</p>
       <p>Weitere Informationen: <a href="https://policies.google.com/privacy?hl=de" rel="noopener noreferrer">Google-Datenschutzerklärung</a> und <a href="https://policies.google.com/technologies/partner-sites?hl=de" rel="noopener noreferrer">Datennutzung durch Google bei Partner-Apps</a>.</p>
 
@@ -38,40 +39,42 @@
       <p>Wortavia enthält die Google User Messaging Platform zur Einwilligungsverwaltung. Sie dient dazu, erforderliche Datenschutzinformationen anzuzeigen und Einwilligungsentscheidungen zu speichern bzw. zu berücksichtigen. Soweit UMP technisch auf Informationen im Endgerät zugreift oder Informationen dort speichert, erfolgt dies entsprechend der gewählten Einwilligung oder – soweit gesetzlich zulässig – zur technisch notwendigen Verwaltung der Datenschutzentscheidung.</p>
 
       <h3>5. Google Play Billing / In-App-Käufe</h3>
-      <p>Wortavia enthält eine technische Integration von Google Play Billing für optionale digitale Käufe, etwa Coin-Pakete und das dauerhafte Entfernen automatischer Werbung. Zahlungen werden über Google Play abgewickelt. Tavirio Games erhält keine vollständigen Zahlungsdaten wie Kreditkarten- oder Bankdaten.</p>
-      <p>Wenn Käufe in einer veröffentlichten Version aktiviert sind, kann die App von Google Play insbesondere Produktkennung, Kaufstatus, Kauf-Token und Informationen zu bisherigen Käufen erhalten, soweit dies für Freischaltung, Wiederherstellung und Betrugsprävention erforderlich ist.</p>
-      <p><strong>Hinweis:</strong> Ein eigener serverseitiger Kaufprüfdienst ist derzeit noch nicht produktiv festgelegt. Vor der Aktivierung eines solchen Dienstes wird diese Datenschutzerklärung um Betreiber, Hosting, Empfänger und konkrete Speicherdauer ergänzt.</p>
-
-      <h3>6. Google Play In-App Review</h3>
+<p>In Wortavia Version 1.3.0 können Sie optional „Werbung dauerhaft entfernen“ einmalig über Google Play erwerben. Der Kauf entfernt automatische Werbeunterbrechungen. Freiwillige Belohnungswerbung bleibt verfügbar. Coin-Pakete werden in dieser Version nicht angeboten. Google Play wickelt die Zahlung ab; Tavirio Games erhält keine vollständigen Kreditkarten- oder Bankdaten.</p>
+<p>Für Kaufprüfung, Wiederherstellung und spätere Abgleiche übermittelt die App ihre App-Kennung, Produktkennung, Google-Play-Kauftoken, Kaufquelle und, soweit vorhanden, Bestellkennung per HTTPS an den Kaufprüfdienst von Tavirio Games. Dieser Dienst wird auf Supabase betrieben und prüft Kauf- und Bestätigungsstatus bei Google Play. Bestätigte Erstattungen mit Entzug der Berechtigung und Widerrufe werden zusätzlich regelmäßig bei Google Play abgeglichen.</p>
+<p>Die Datenbank des Dienstes speichert eine interne Datensatzkennung, einen SHA-256-Hash des Kauftokens, App- und Produktkennung, Kauf-, Bestätigungs- und Berechtigungsstatus, Prüfzeitpunkte, Erstattungs-/Widerrufsinformationen sowie Informationen zu Aktualisierungen. Der vollständige Kauftoken und die Bestellkennung werden zur Prüfung verarbeitet, aber nicht in dieser Datenbank dauerhaft gespeichert. Der vollständige Token kann privat auf dem Gerät für spätere Abgleiche gespeichert bleiben; er ist nicht Bestandteil von Spielstand-Exporten.</p>
+<p>Kaufdaten dienen der Bereitstellung und Wiederherstellung der gekauften Berechtigung, dem Schutz vor mehrfacher oder unberechtigter Freischaltung und der Umsetzung bestätigter Erstattungen oder Widerrufe. Regulärer Spielstand, Coins, Statistik und Serie werden an diesen Dienst nicht übertragen. Ein Wortavia-Konto ist nicht erforderlich. Vorübergehende Dienstfehler gelten nicht als Nachweis einer Erstattung.</p>
+<h3>6. Google Play In-App Review</h3>
       <p>Wortavia kann die offizielle In-App-Bewertungsfunktion von Google Play aufrufen. Die Nutzung ist freiwillig. Wenn Nutzer eine Bewertung oder einen Rezensionstext eingeben, erfolgt die Verarbeitung über Google Play. In geschlossenen Tests kann Feedback dem Entwickler nichtöffentlich zugänglich gemacht werden; in der Produktionsversion kann eine Rezension entsprechend den Google-Play-Einstellungen veröffentlicht werden.</p>
 
-      <h3>7. Teilen-Funktion</h3>
+      <h3>7. Teilen und Erinnerungen</h3>
       <p>Wortavia kann über den Android-Systemdialog Inhalte wie Einladungstexte oder eine Daily-Ergebniskarte zum Teilen bereitstellen. Erst wenn der Nutzer selbst eine Ziel-App auswählt, werden die ausgewählten Inhalte an diese App übergeben. Tavirio Games liest dabei keine Kontakte aus und erhält dadurch keine Empfängerdaten.</p>
 
-      <h3>8. Empfänger und Drittlandübermittlungen</h3>
-      <p>Bei Nutzung der oben genannten Google-Dienste können Daten an Google-Gesellschaften und von Google eingesetzte Dienstleister übermittelt werden. Google betreibt Dienste weltweit; dadurch kann eine Verarbeitung auch außerhalb des Europäischen Wirtschaftsraums stattfinden. Google informiert über eingesetzte Transfermechanismen und Datenschutzgarantien unter <a href="https://policies.google.com/privacy/frameworks?hl=de" rel="noopener noreferrer">Google – rechtliche Rahmenbedingungen für Datenübermittlungen</a>.</p>
-
-      <h3>9. Speicherdauer</h3>
-      <p>Lokale Spieldaten bleiben grundsätzlich auf dem Gerät, bis sie durch den Nutzer gelöscht, die App-Daten zurückgesetzt oder die App deinstalliert werden. Für Daten, die Google in eigener Verantwortlichkeit verarbeitet, gelten die von Google veröffentlichten Aufbewahrungsregeln. Support-E-Mails werden nur so lange gespeichert, wie dies für die Bearbeitung des Anliegens und gesetzliche Aufbewahrungspflichten erforderlich ist.</p>
-
-      <h3>10. Rechte betroffener Personen</h3>
-      <p>Betroffene Personen haben im Rahmen der gesetzlichen Voraussetzungen insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Erteilte Einwilligungen können jederzeit mit Wirkung für die Zukunft widerrufen werden.</p>
-      <p>Zur Ausübung von Datenschutzrechten kann die E-Mail-Adresse <a href="mailto:taviriogames@gmail.com">taviriogames@gmail.com</a> verwendet werden. Soweit Tavirio Games die betreffenden personenbezogenen Daten nicht selbst gespeichert hat, wird dies auf Anfrage mitgeteilt. Für unmittelbar von Google verarbeitete Daten stehen zusätzlich die Datenschutz- und Kontofunktionen von Google zur Verfügung.</p>
-
-      <h3>11. Beschwerderecht</h3>
+      <p>Wenn Sie die freiwillige Tagesrätsel-Erinnerung aktivieren und die Benachrichtigungsberechtigung erteilen, plant Wortavia die Erinnerung lokal auf dem Gerät. Sie kann in der App oder den Android-Einstellungen deaktiviert werden. Ein Konto oder Benachrichtigungsserver von Tavirio Games ist dafür nicht erforderlich.</p>
+      <h3>8. Empfänger, Hosting und Drittlandübermittlungen</h3>
+<p>Bei Nutzung der genannten Google-Dienste können Daten an Google-Gesellschaften und deren Dienstleister übermittelt werden. Google betreibt Dienste weltweit. Weitere Informationen: <a href="https://policies.google.com/privacy/frameworks?hl=de">Google – rechtliche Rahmenbedingungen für Datenübermittlungen</a>.</p>
+<p>Tavirio Games verwendet Supabase für das Hosting des Kaufprüfdienstes und seiner PostgreSQL-Datenbank. Supabase beschreibt die Verarbeitung im Auftrag seiner Kunden im <a href="https://supabase.com/legal/customer-resources/data-processing-addendum">Data Processing Addendum</a>, das Supabase Pte. Ltd. nennt und Garantien für internationale Übermittlungen einschließlich gegebenenfalls anwendbarer Standardvertragsklauseln festlegt. Die Datenbank für die Kaufprüfung wird in Irland betrieben. Diese Datenbankregion garantiert nicht, dass sämtliche Hosting-, Support- oder Unterauftragnehmerverarbeitung ausschließlich im Europäischen Wirtschaftsraum stattfindet.</p>
+<p>Bei Aufrufen des Kaufprüfdienstes enthalten Hosting-/Gateway-Logs die IP-Adresse, aus der Verbindung abgeleitete ungefähre Stadt-/Regionsangaben, Zeitpunkt, aufgerufenen Pfad, User-Agent-Angaben, Antwortstatus und technische Leistungs-/Diagnosedaten. Sie dienen dem Dienstbetrieb, der Fehlerbehebung und dem Schutz vor Missbrauch. Zur Begrenzung von Anfragen werden vorübergehend Zähler mit einer gehashten Kaufkennung und Zeitfenstern gespeichert. Der Kaufprüfcode protokolliert keine vollständigen Kauftokens, Bestellkennungen oder geheimen Zugangsdaten.</p>
+<h3>9. Speicherdauer</h3>
+<p>Lokale Spieldaten bleiben auf dem Gerät, bis sie gelöscht, die App-Daten zurückgesetzt oder die App deinstalliert werden. Separat exportierte Spielstände müssen am jeweiligen Speicherort gelöscht werden. Google verwendet eigene Aufbewahrungsregeln für Daten in seiner Verantwortlichkeit. Support-E-Mails werden für die Bearbeitung des Anliegens und anwendbare gesetzliche Pflichten aufbewahrt.</p>
+<p>Serverseitige Kauf- und Berechtigungsdatensätze sind von lokalen Spieldaten unabhängig. Für diese Datensätze besteht derzeit keine automatische zeitbasierte Löschung. Aktive Einträge unterstützen die dauerhafte Berechtigung und Wiederherstellung; Widerrufseinträge verhindern eine erneute Aktivierung eines ungültigen Kaufs. Das Löschen lokaler Daten entfernt diese Serverdatensätze nicht. Löschanfragen werden wie unten beschrieben geprüft.</p>
+<p>Alte Rate-Limit-Zähler werden bei einer neuen globalen Anfrage entfernt, wenn ihr Zeitfenster mehr als 15 Minuten zurückliegt. Bei Inaktivität ist dadurch keine Löschung garantiert. Technische Hosting-Logs werden gemäß dem verwendeten Supabase-Tarif einen Tag aufbewahrt; eine verlängerte Aufbewahrung ist nicht eingerichtet. Lokale App-Daten-Löschung entfernt weder diese Logs noch Anbieter-Backups.</p>
+<h3>10. Rechte und Löschanfragen</h3>
+<p>Im Rahmen der gesetzlichen Voraussetzungen bestehen insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch. Einwilligungen können für die Zukunft widerrufen werden. Zur Ausübung Ihrer Rechte, auch bezüglich serverseitiger Kauf- und Berechtigungsdaten, kontaktieren Sie <a href="mailto:taviriogames@gmail.com">taviriogames@gmail.com</a>.</p>
+<p>Wir prüfen die Anfrage und ordnen den betreffenden Kauf sicher zu. Senden Sie keine Passwörter, vollständigen Kauftokens oder Kartendaten per E-Mail. Notwendige Aufbewahrung und Auswirkungen auf Kaufprüfung und Wiederherstellung werden bei der Anfrage berücksichtigt. Serverdaten werden nicht über einen automatischen Löschbutton in der App entfernt. Für unmittelbar von Google verarbeitete Daten stehen dessen Datenschutz- und Kontofunktionen zur Verfügung. Weitere Informationen: <a href="datenloeschung.html">Datenlöschung</a>.</p>
+<h3>11. Beschwerderecht</h3>
       <p>Nutzer haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren. Für den Verantwortlichen ist insbesondere zuständig:</p>
       <p>Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW)<br>
       Kavalleriestraße 2–4<br>
       40213 Düsseldorf<br>
       Web: <a href="https://www.ldi.nrw.de/" rel="noopener noreferrer">www.ldi.nrw.de</a></p>
 
-      <h3>12. Sicherheit</h3>
-      <p>Übertragungen zu den eingebundenen Google-Diensten erfolgen nach deren Angaben verschlüsselt, insbesondere über TLS. Wortavia verwendet kein eigenes Benutzerkonto und speichert den regulären Spielstand lokal auf dem Gerät.</p>
-
-      <h3>13. Änderungen dieser Datenschutzerklärung</h3>
+      <h3>12. Sicherheit und Zwecke</h3>
+<p>Übertragungen des eingebundenen Werbe-SDKs sind laut Google mit TLS verschlüsselt. App und Kaufprüfdienst sowie Kaufprüfdienst und Google kommunizieren über HTTPS; die Backend-Datenbankverbindung verwendet zertifikatsgeprüftes TLS. Regulärer Spielstand bleibt lokal; ein Wortavia-Konto ist nicht erforderlich.</p>
+<p>Kaufprüfung und Wiederherstellung erfolgen zur Erfüllung der mit dem Kauf gewünschten Leistung (Art. 6 Abs. 1 Buchst. b DSGVO). Erforderlicher Missbrauchsschutz und technische Betriebsdiagnosen beruhen auf dem berechtigten Interesse an einem sicheren, zuverlässigen Dienst und der Verhinderung unberechtigter Freischaltungen (Art. 6 Abs. 1 Buchst. f DSGVO), soweit Ihre Interessen und Grundrechte nicht überwiegen. Soweit Werbung eine Einwilligung erfordert, ist diese die Grundlage der entsprechenden Verarbeitung (Art. 6 Abs. 1 Buchst. a DSGVO); sie wird über UMP verwaltet.</p>
+<h3>13. Änderungen dieser Datenschutzerklärung</h3>
       <p>Diese Datenschutzerklärung wird angepasst, wenn sich Funktionen, eingebundene Dienste, gesetzliche Anforderungen oder die konkrete Werbe- bzw. Kaufkonfiguration ändern. Die jeweils aktuelle Fassung wird unter dieser URL veröffentlicht.</p>
 
-      <p class="small">Stand: 16. September 2026</p>
+      <p class="small">Stand: 11. Oktober 2026 · Wortavia Version 1.3.0</p>
     </section>
   </main>
   <footer><div class="wrap">© 2026 Tavirio Games – Mike Lennartz · <a href="impressum.html">Impressum</a></div></footer>
