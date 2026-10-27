@@ -12,45 +12,33 @@
   <nav><div class="wrap"><a href="index.html">Übersicht</a><a href="datenschutz.html">Datenschutz</a><a href="datenloeschung.html">Datenlöschung</a><a href="impressum.html">Impressum</a></div></nav>
   <main class="wrap">
     <section class="card">
-      <h2>Datenlöschung bei Wortavia</h2>
-      <p>Diese Seite beschreibt, wie Nutzerinnen und Nutzer die Löschung ihrer Daten im Zusammenhang mit der Android-App <strong>Wortavia</strong> von <strong>Tavirio Games</strong> veranlassen können.</p>
-
-      <div class="notice"><strong>Kein Benutzerkonto:</strong> Wortavia verwendet kein eigenes Benutzerkonto. Reguläre Spieldaten werden grundsätzlich lokal auf dem Gerät gespeichert.</div>
-
-      <h3>1. Lokale Spieldaten selbst löschen</h3>
-      <p>Zu den lokal gespeicherten Daten gehören insbesondere Spielstand, Coins, gelöste Level, Statistiken, Serien, Einstellungen und der Zustand eines begonnenen Rätsels.</p>
-      <p>Diese Daten können direkt auf dem Gerät gelöscht werden:</p>
-      <ul>
-        <li>über die Android-Einstellungen durch Löschen der App-Daten bzw. des App-Speichers oder</li>
-        <li>durch Deinstallation von Wortavia.</li>
-      </ul>
-      <p>Tavirio Games speichert diese regulären Spieldaten nicht in einer eigenen Cloud und kann sie daher grundsätzlich nicht aus der Ferne löschen.</p>
-
-      <p>Separat exportierte Spielstände müssen am gewählten Speicherort zusätzlich gelöscht werden. Spielstand-Importe erzeugen oder verändern keine Google-Play-Kaufberechtigung.</p>
-      <h3>2. Löschung von Daten bei Tavirio Games anfordern</h3>
-<p>Sie können die Löschung von Support-Kommunikation und serverseitigen Kauf- oder Berechtigungsdaten anfordern. Schreiben Sie an <a href="mailto:taviriogames@gmail.com?subject=Datenl%C3%B6schung%20Wortavia">taviriogames@gmail.com</a> mit dem Betreff „Datenlöschung Wortavia“. Benennen Sie den betroffenen Kauf (beispielsweise anhand der Google-Play-Bestellkennung, soweit vorhanden) oder die Kommunikation. Senden Sie keine Passwörter, vollständigen Kauftokens oder Kartendaten. Für die sichere Zuordnung können weitere angemessene Angaben erforderlich sein.</p>
-<p>Anfragen werden ohne unangemessene Verzögerung innerhalb der gesetzlichen Fristen geprüft. Daten werden gelöscht, soweit keine erforderliche Aufbewahrung oder andere rechtmäßige Gründe entgegenstehen. Lokale Datenlöschung entfernt weder Serverdatensätze, Hosting-Logs noch die Google-Play-Bestellung und storniert für sich keinen Kauf. Ein automatischer serverseitiger Löschbutton besteht nicht.</p>
-<h3>3. Betroffene Daten</h3>
-<p>Dazu gehören Support-E-Mails und serverseitige Kaufdatensätze: Token-Hash, App-/Produktkennung, Kauf-/Berechtigungs-/Bestätigungsstatus, Zeitpunkte sowie Erstattungs-/Widerrufsinformationen. Supabase-Hosting-Logs enthalten außerdem IP-Adressen, ungefähre Verbindungsstandorte und technische Anfrage-/Diagnoseinformationen. Vollständige Kauftokens und Bestellkennungen werden nicht in der Kaufdatenbank dauerhaft gespeichert.</p>
-<p>Lokale Spieldaten löschen Sie wie oben beschrieben selbst. Anbieter-Logs und Backups sind davon getrennt und werden durch App-Daten-Löschung nicht entfernt.</p>
-<h3>4. Erforderliche Aufbewahrung</h3>
-<p>Aktive Berechtigungsdatensätze unterstützen die dauerhafte Nutzung und Wiederherstellung; Widerrufseinträge verhindern eine erneute Aktivierung ungültiger Käufe. Für diese Datensätze besteht derzeit keine automatische zeitbasierte Löschung. Löschanfragen werden einzeln geprüft, auch hinsichtlich notwendiger Aufbewahrung für diese Zwecke oder gesetzliche Pflichten und Auswirkungen auf Wiederherstellung. Technische Hosting-Logs werden gemäß dem verwendeten Supabase-Tarif einen Tag aufbewahrt; eine verlängerte Aufbewahrung ist nicht eingerichtet.</p>
-<h3>5. Daten bei Google-Diensten</h3>
-      <p>Wortavia verwendet bzw. integriert Google-Dienste wie Google Mobile Ads/AdMob, Google Play Billing und Google Play In-App Review. Daten, die Google in eigener Verantwortlichkeit verarbeitet, kann Tavirio Games nicht unmittelbar aus Google-Konten oder Google-Systemen löschen.</p>
-      <p>Für solche Daten stehen zusätzlich die Datenschutz- und Kontofunktionen von Google zur Verfügung. Weitere Informationen findest du in der <a href="https://policies.google.com/privacy?hl=de" rel="noopener noreferrer">Google-Datenschutzerklärung</a>.</p>
-
-      <h3>6. Kontakt und weitere Datenschutzrechte</h3>
-      <p>Verantwortlich:</p>
-      <p><strong>Mike Lennartz</strong><br>
-      handelnd unter <strong>Tavirio Games</strong><br>
-      Königsallee 23<br>
-      41747 Viersen<br>
-      Deutschland<br>
-      E-Mail: <a href="mailto:taviriogames@gmail.com">taviriogames@gmail.com</a></p>
-      <p>Weitere Informationen findest du in der <a href="datenschutz.html">Datenschutzerklärung für Wortavia</a>.</p>
-
-      <p class="small">Stand: 11. Oktober 2026 · Wortavia Version 1.3.0</p>
-    </section>
+<h2>Datenlöschung bei Wortavia</h2>
+<p>Diese Seite erklärt die getrennten Löschwege für Wortavia. Eine lokale Datenlöschung entfernt keine Serverdaten und storniert keinen Google-Play-Kauf. Bevor du lokale Zugänge entfernst, führe gewünschte Serverlöschungen möglichst online aus und prüfe deren Bestätigung.</p>
+<h3>1. Lokaler Spielstand und exportierte Sicherungen</h3>
+<p>Spielstand, Coins, Level, Tagesrätsel, Missionen, Abzeichen, Serien und Einstellungen werden grundsätzlich lokal gespeichert. Du kannst diese Daten über die Android-App-Einstellungen durch Löschen der App-Daten oder Deinstallation entfernen. Das kann Fortschritt unwiederbringlich löschen; Tavirio Games hält dafür keine allgemeine Cloudkopie bereit.</p>
+<p>Separat exportierte Sicherungsdateien bleiben am selbst gewählten Speicherort und müssen dort gesondert gelöscht werden. Auch eine Kopie bei einem von dir gewählten Cloudanbieter wird nicht durch die App-Deinstallation gelöscht. Ein Save-Import erzeugt oder ändert keine Google-Play-Kaufberechtigung.</p>
+<h3>2. Freiwillige Gameplay-Statistik</h3>
+<p>Die eigene Analyse bleibt ohne Freischaltung, gültige spezifische Einwilligung und ausreichende individuelle Berechtigung ausgeschaltet. Ist sie für dich freigeschaltet, kannst du unter Einstellungen → „Werbe- und Einwilligungseinstellungen“ beziehungsweise den Datenschutzoptionen widerrufen. Neue Erfassung und Uploads stoppen und nicht gesendete freiwillige Ereignisse werden verworfen. Das Spiel bleibt vollständig nutzbar.</p>
+<p>Eine geschützte Löschberechtigung bleibt für den offenen Serverauftrag erhalten. Offline wird dieser lokal vorgemerkt und erst bei späterer aktiver Online-Nutzung übermittelt beziehungsweise abgeglichen. Der berechtigte Servereingang sperrt die Installation und stößt die Entfernung der aktiven Zuordnung, Ereignisse, Pakete, Coin-Snapshots und Teilnahmezeilen an. Bei einem Fehler wird der Auftrag erneut bearbeitet. Ein lokaler Widerruf oder erfolgreicher Versandversuch ist noch keine bestätigte Serverlöschung; es gibt keine pauschale 24-Stunden-Garantie.</p>
+<p>Die reguläre Analytics-Bereinigung läuft alle 15 Minuten und entfernt Rohereignisse, Pakete und Snapshots ab 89 Tagen und 23 Stunden seit Serverempfang. Begrenzte Einwilligungs-/Registrierungs- und Replaynachweise können regulär bis zu 90 Tage ab Erstellung des jeweiligen Datensatzes verbleiben; bestätigter Löschstatus sieben Tage. Störungen oder Dienstpausen können die Bearbeitung verzögern. Nicht versandte lokale Ereignisse haben ein siebentägiges Übertragungsfenster und werden beim nächsten Zugriff bereinigt. Geschlossene Apps führen keinen eigenen Hintergrundlöschprozess aus. Eine 13-monatige Aufbewahrung von Langzeitaggregaten ist nicht freigegeben.</p>
+<h3>3. Supporttickets, Bilder und lokale Gesprächskopien</h3>
+<p>Öffentlicher In-App-Supportversand ist noch nicht freigegeben. Soweit ein Ticketzugang verfügbar ist, entfernt „Anfrage löschen“ nach erfolgreicher Serverbearbeitung Ticket, Nachrichten, Antworten, optionales Bild und Gelesen-Markierungen. Ein inhaltsfreier gehashter Löschmarker kann sieben Tage bleiben, um Wiederholungen sicher zu behandeln. Support ist unabhängig von Analytics; ein Analysewiderruf löscht kein Gespräch.</p>
+<p>Supporttickets werden nach 90 Tagen seit der letzten Nachricht oder Statusänderung, spätestens 180 Tagen seit Ticketerstellung zur Löschung fällig. Bloßes Ansehen verlängert diese Frist nicht. Der automatische Support-Löschplan läuft regulär alle 15 Minuten und entfernt fällige Tickets mit den zugehörigen Nachrichten, Bildern und Statusdaten; abgelaufene Löschmarker werden ebenfalls bereinigt. Störungen oder Dienstpausen können die Bearbeitung verzögern. Eine vom Gerät angeforderte Löschung bleibt ohne Netz oder bei Fehler offen, bis sie serverseitig bestätigt ist. Lokal verschlüsselte Texte und Ticketzugänge sind getrennt; der Gesprächscache hat keine automatische zeitliche Löschfrist. Eine lokale Kopie zu entfernen ist keine bestätigte Serverlöschung.</p>
+<p>Ohne erhaltenen geheimen Ticketzugang kann nach Datenverlust oder Deinstallation die anonyme Zuordnung nicht garantiert wiederhergestellt werden. Deine gesetzlichen Rechte bleiben bestehen; wir prüfen eine angemessene alternative Zuordnung. Sende keine geheimen Ticketzugänge oder Tokens per E-Mail.</p>
+<h3>4. Kauf- und Berechtigungsnachweise</h3>
+<p>Für serverseitige Kaufdaten gibt es keinen automatischen Löschbutton und keine allgemeine zeitbasierte Löschung. Aktive Nachweise ermöglichen die dauerhafte Nutzung und Wiederherstellung von „Werbung dauerhaft entfernen“; Widerrufsnachweise verhindern die erneute Aktivierung ungültiger Käufe. Dazu gehören Token-Hash, App-/Produktkennung, Berechtigungs-/Prüfstatus, Zeitpunkte sowie Erstattungs-/Widerrufsinformationen. Vollständige Kauftokens und Bestellkennungen werden nicht dauerhaft in der Kaufdatenbank gespeichert.</p>
+<p>Du kannst die Löschung anfragen. Wir prüfen, welche minimalen Nachweise weiterhin für die gekaufte Leistung, rechtmäßigen Missbrauchsschutz oder gesetzliche Pflichten erforderlich sind. Das Löschen von Nachweisen kann spätere Prüfung oder Wiederherstellung erschweren; es storniert nicht automatisch den Google-Play-Kauf und ist für sich kein Nachweis einer Erstattung. Ein Analyticswiderruf oder eine Supportlöschung entzieht keine gekauften Rechte.</p>
+<h3>5. Hostingprotokolle, Sicherheitskopien und Google</h3>
+<p>HTTPS-Dienste können Verbindungs- und technische Betriebsdaten verarbeiten, darunter IP-Adresse, daraus abgeleitete ungefähre Region, Zeitpunkt und Antwortstatus. Im verwendeten Supabase-Free-Tarif sind API-/Datenbanklogs regulär einen Tag zugänglich. Dies ist keine garantierte physische Löschfrist aller Anbieterprotokolle oder Sicherheitskopien. Kundenzugängliche automatische tägliche Datenbanksicherungen sind im Free-Tarif nicht enthalten; daraus folgt nicht, dass es keine internen Anbieterkopien gibt. App-Daten-Löschung entfernt diese Daten nicht.</p>
+<p>Anbieterprotokolle und erforderliche Kopien werden nach den anwendbaren vertraglichen Betriebs-, Sicherheits- und gesetzlichen Erfordernissen behandelt; konkrete Rechteanfragen werden mit dem Anbieter bearbeitet. Tavirio Games kann Daten, die Google eigenverantwortlich für AdMob, UMP, Play Billing, Play Integrity oder andere Google-Dienste verarbeitet, nicht unmittelbar aus Google-Konten löschen. Nutze zusätzlich Googles Datenschutz- und Kontofunktionen: <a href="https://policies.google.com/privacy?hl=de">Google-Datenschutzerklärung</a>.</p>
+<h3>6. Löschanfrage und weitere Rechte</h3>
+<p>Schreibe an <a href="mailto:taviriogames@gmail.com?subject=Datenl%C3%B6schung%20Wortavia">taviriogames@gmail.com</a>, Betreff „Datenlöschung Wortavia“. Beschreibe die betroffene Verarbeitung oder Anfrage; bei einem Kauf kannst du die vorhandene Google-Play-Bestellkennung nennen. Sende keine Passwörter, vollständigen Kauftokens, Kartendaten oder geheimen Zugänge. Für eine sichere Zuordnung können verhältnismäßige weitere Angaben erforderlich sein.</p>
+<p>Anfragen werden ohne unangemessene Verzögerung innerhalb der gesetzlichen Fristen geprüft. Gelöscht wird, soweit keine erforderliche Aufbewahrung oder andere rechtmäßige Gründe entgegenstehen. Du hast nach den gesetzlichen Voraussetzungen insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch sowie Widerruf einer Einwilligung für die Zukunft und Beschwerde bei einer Datenschutzaufsichtsbehörde. Support-E-Mails folgen der Bearbeitungsdauer und gegebenenfalls gesetzlichen Pflichten, keiner automatisch laufenden Ticketfrist.</p>
+<h3>7. Verantwortlicher</h3>
+<p><strong>Mike Lennartz</strong><br>handelnd unter <strong>Tavirio Games</strong><br>Königsallee 23<br>41747 Viersen<br>Deutschland<br>E-Mail: <a href="mailto:taviriogames@gmail.com">taviriogames@gmail.com</a></p>
+<p>Weitere Informationen: <a href="datenschutz.html">Datenschutzerklärung</a>. Wortavia benötigt kein eigenes Benutzerkonto; pseudonyme Analyse- oder Ticketzugänge sind getrennte Berechtigungen.</p>
+<p class="small">Stand: 27. Oktober 2026 · Wortavia 1.3.0+15 · v15-2026-10-27</p>
+</section>
   </main>
   <footer><div class="wrap">© 2026 Tavirio Games – Mike Lennartz · <a href="datenschutz.html">Datenschutz</a> · <a href="impressum.html">Impressum</a></div></footer>
 </body>
